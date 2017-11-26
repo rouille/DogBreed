@@ -16117,7 +16117,13 @@ gg==
 <h2 id="Step-7:-Test-Your-Algorithm">Step 7: Test Your Algorithm<a class="anchor-link" href="#Step-7:-Test-Your-Algorithm">&#182;</a></h2><p>In this section, you will take your new algorithm for a spin!  What kind of dog does the algorithm think that <strong>you</strong> look like?  If you have a dog, does it predict your dog's breed accurately?  If you have a cat, does it mistakenly think that your cat is a dog?</p>
 <h3 id="(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">(IMPLEMENTATION) Test Your Algorithm on Sample Images!<a class="anchor-link" href="#(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">&#182;</a></h3><p>Test your algorithm at least six images on your computer.  Feel free to use any images you like.  Use at least two human and two dog images.</p>
 <p><strong>Question 6:</strong> Is the output better than you expected :) ?  Or worse :( ?  Provide at least three possible points of improvement for your algorithm.</p>
-<p><strong>Answer:</strong> The output is better than I expected. The human and dog detectors did a great job by correctly identifying the four human faces and four dogs among the nine images I have chosen. Also, none of them have mistaken my cat for neither a dog or human. The CNN algorithm accurately predicted the breed of three dogs: Pointer, Golden Retriever and Great Dane. The algorithm has falsely identified an American Staffordshire Terrier for a Parson Russel Terrier.</p>
+<p><strong>Answer:</strong> The output is better than I expected. The human and dog detectors did a great job by correctly identifying the four human faces and four dogs among the nine images I have chosen. Also, none of them have mistaken my cat for neither a dog or human. The CNN algorithm accurately predicted the breed of three of the dogs: the Pointer, the Golden Retriever and the Great Dane. The algorithm falsely identified an American Staffordshire Terrier for a Parson Russel Terrier.</p>
+<p>I believe there are several ways to improve our accuracy and, in particular, its accuracy.</p>
+<ul>
+<li>Build a CNN dedicated to dog breed classification. The models we have used via transfer learning capture features like curves and edges in its early layers that are relevant and useful to most classifications but not specific to dog breed recognition.</li>
+<li>Use the architecture of one of the award winning CNN such as Xception or Resnet50 and train it on a dog dataset such as the one presented <a href="http://vision.stanford.edu/aditya86/ImageNetDogs/">here</a>.</li>
+<li>We could also try to increase the number of layers after loading the bottleneck features of the pre-trained CNNs. This would definitely improve the recognition features associated with dog breed classification.</li>
+</ul>
 
 </div>
 </div>
